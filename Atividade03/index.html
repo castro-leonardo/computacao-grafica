@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong</title>
+    <style>
+        body {
+            background: #1a1a1a;
+            color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        #placar {
+            font-size: 32px;
+            display: flex;
+            gap: 40px;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+
+        #placarEsquerda {
+            color: #33ff66;
+        }
+
+        #placarDireita {
+            color: #3366ff;
+        }
+
+        #instrucoes {
+            font-size: 14px;
+            color: #999;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+
+        canvas {
+            border: 2px solid #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="placar">
+        <span>Esquerda: <span id="placarEsquerda">0</span></span>
+        <span>Direita: <span id="placarDireita">0</span></span>
+    </div>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <div id="instrucoes">
+        Esquerda: W/S &nbsp;&nbsp;|&nbsp;&nbsp; Direita: SETAS
+    </div>
+
+    <script src="m3.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
